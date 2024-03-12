@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="flex h-screen w-full items-center justify-center p-4">
+        <div class="flex h-96 w-96 flex-col rounded border bg-white text-white shadow-lg dark:bg-zinc-950">
+          <div class="flex h-12 w-full justify-between rounded bg-gray-100 p-3 dark:bg-gray-900">
+            <div class="text-gray-900 dark:text-white">New Message</div>
+            <div>
+              <div class="relative text-gray-900 dark:text-white">
+                <button class="absolute right-11 top-2 flex items-end justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-dash flex" viewBox="0 0 16 16">
+                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+                  </svg>
+                </button>
+                <button class="absolute right-6 top-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrows-vertical rotate-45" viewBox="0 0 16 16">
+                    <path d="M8.354 14.854a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 13.293V2.707L6.354 3.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 2.707v10.586l1.146-1.147a.5.5 0 0 1 .708.708z" />
+                  </svg>
+                </button>
+                <button class="absolute right-0 top-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                  </svg>
+                </button>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <div class="flex-1 overflow-auto">
+            <div class="mx-3 flex items-center justify-between border-b pb-1 pt-2 dark:border-b-gray-700">
+              <div class="text-gray-700 dark:text-white">To</div>
+              <div class="w-full px-2">
+                <textarea name="" id="" rows="1" class="w-full rounded bg-white p-1 text-gray-900 dark:bg-slate-800 dark:text-white"></textarea>
+              </div>
+              <div class="flex gap-2">
+                <div>
+                  <button class="text-gray-700 dark:text-white">Cc</button>
+                </div>
+                <div>
+                  <button class="text-gray-700 dark:text-white">Bcc</button>
+                </div>
+              </div>
+            </div>
+            <div class="mx-3 flex justify-between border-b pb-1 pt-3 text-gray-700 dark:border-b-gray-700 dark:text-white">
+              <textarea name="" id="" rows="1" class="w-full rounded bg-white p-1 text-gray-950 dark:bg-slate-800 dark:text-white" placeholder="Subject"></textarea>
+            </div>
+          </div>
+          <div class="flex w-full justify-between p-3">
+            <div class="flex items-center">
+              <div class="rounded-full bg-cyan-600">
+                <button class="mr-1 border-r border-gray-700 px-4 py-2 font-semibold text-white dark:text-white">Send</button>
+                <button class="justify-end pr-3 text-white dark:text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                  </svg>
+                </button>
+              </div>
+              <div class="pl-3 text-gray-500 dark:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-paperclip" viewBox="0 0 16 16">
+                  <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0z" />
+                </svg>
+              </div>
+            </div>
+            <div class="flex items-center text-gray-500 dark:text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
+                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+    <button id="copyButton"
+        class="fixed top-0 right-0 m-3 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue active:bg-blue-800"
+        onclick="copyToClipboard()">Copy</button>
+
+    <div class="max-w-md mx-auto bg-white p-6 rounded-md shadow-md">
+        <label for="copyTextArea" class="block text-sm font-medium text-gray-700 mb-2">Copy Text</label>
+        <div class="relative rounded-md shadow-sm">
+            <textarea id="copyTextArea"
+                class="form-input py-2 px-4 block w-full leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+                rows="5" readonly>
+
+                &lt;div class=&quot;flex h-96 w-96 flex-col rounded border bg-white text-white shadow-lg dark:bg-zinc-950&quot;&gt;
+                    &lt;div class=&quot;flex h-12 w-full justify-between rounded bg-gray-100 p-3 dark:bg-gray-900&quot;&gt;
+                      &lt;div class=&quot;text-gray-900 dark:text-white&quot;&gt;New Message&lt;/div&gt;
+                      &lt;div&gt;
+                        &lt;div class=&quot;relative text-gray-900 dark:text-white&quot;&gt;
+                          &lt;button class=&quot;absolute right-11 top-2 flex items-end justify-center&quot;&gt;
+                            &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;20&quot; height=&quot;20&quot; fill=&quot;currentColor&quot; class=&quot;bi bi-dash flex&quot; viewBox=&quot;0 0 16 16&quot;&gt;
+                              &lt;path d=&quot;M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8&quot; /&gt;
+                            &lt;/svg&gt;
+                          &lt;/button&gt;
+                          &lt;button class=&quot;absolute right-6 top-2&quot;&gt;
+                            &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;16&quot; height=&quot;16&quot; fill=&quot;currentColor&quot; class=&quot;bi bi-arrows-vertical rotate-45&quot; viewBox=&quot;0 0 16 16&quot;&gt;
+                              &lt;path d=&quot;M8.354 14.854a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 13.293V2.707L6.354 3.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 2.707v10.586l1.146-1.147a.5.5 0 0 1 .708.708z&quot; /&gt;
+                            &lt;/svg&gt;
+                          &lt;/button&gt;
+                          &lt;button class=&quot;absolute right-0 top-1&quot;&gt;
+                            &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;22&quot; height=&quot;22&quot; fill=&quot;currentColor&quot; class=&quot;bi bi-x&quot; viewBox=&quot;0 0 16 16&quot;&gt;
+                              &lt;path d=&quot;M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708&quot; /&gt;
+                            &lt;/svg&gt;
+                          &lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;div&gt;&lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;flex-1 overflow-auto&quot;&gt;
+                      &lt;div class=&quot;mx-3 flex items-center justify-between border-b pb-1 pt-2 dark:border-b-gray-700&quot;&gt;
+                        &lt;div class=&quot;text-gray-700 dark:text-white&quot;&gt;To&lt;/div&gt;
+                        &lt;div class=&quot;w-full px-2&quot;&gt;
+                          &lt;textarea name=&quot;&quot; id=&quot;&quot; rows=&quot;1&quot; class=&quot;w-full rounded bg-white p-1 text-gray-900 dark:bg-slate-800 dark:text-white&quot;&gt;&lt;/textarea&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;flex gap-2&quot;&gt;
+                          &lt;div&gt;
+                            &lt;button class=&quot;text-gray-700 dark:text-white&quot;&gt;Cc&lt;/button&gt;
+                          &lt;/div&gt;
+                          &lt;div&gt;
+                            &lt;button class=&quot;text-gray-700 dark:text-white&quot;&gt;Bcc&lt;/button&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;mx-3 flex justify-between border-b pb-1 pt-3 text-gray-700 dark:border-b-gray-700 dark:text-white&quot;&gt;
+                        &lt;textarea name=&quot;&quot; id=&quot;&quot; rows=&quot;1&quot; class=&quot;w-full rounded bg-white p-1 text-gray-950 dark:bg-slate-800 dark:text-white&quot; placeholder=&quot;Subject&quot;&gt;&lt;/textarea&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;flex w-full justify-between p-3&quot;&gt;
+                      &lt;div class=&quot;flex items-center&quot;&gt;
+                        &lt;div class=&quot;rounded-full bg-cyan-600&quot;&gt;
+                          &lt;button class=&quot;mr-1 border-r border-gray-700 px-4 py-2 font-semibold text-white dark:text-white&quot;&gt;Send&lt;/button&gt;
+                          &lt;button class=&quot;justify-end pr-3 text-white dark:text-white&quot;&gt;
+                            &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;13&quot; height=&quot;13&quot; fill=&quot;currentColor&quot; class=&quot;bi bi-caret-down-fill&quot; viewBox=&quot;0 0 16 16&quot;&gt;
+                              &lt;path d=&quot;M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z&quot; /&gt;
+                            &lt;/svg&gt;
+                          &lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;pl-3 text-gray-500 dark:text-white&quot;&gt;
+                          &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;23&quot; height=&quot;23&quot; fill=&quot;currentColor&quot; class=&quot;bi bi-paperclip&quot; viewBox=&quot;0 0 16 16&quot;&gt;
+                            &lt;path d=&quot;M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0z&quot; /&gt;
+                          &lt;/svg&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;flex items-center text-gray-500 dark:text-white&quot;&gt;
+                        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;23&quot; height=&quot;23&quot; fill=&quot;currentColor&quot; class=&quot;bi bi-trash&quot; viewBox=&quot;0 0 16 16&quot;&gt;
+                          &lt;path d=&quot;M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z&quot; /&gt;
+                          &lt;path d=&quot;M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z&quot; /&gt;
+                        &lt;/svg&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;    
+
+            </textarea>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const textarea = document.getElementById('chat');
+            const charCount = document.getElementById('charCount');
+
+            textarea.addEventListener('input', function () {
+                const currentLength = textarea.value.length;
+                charCount.textContent = `${currentLength}/160`;
+            });
+        });
+
+        function copyToClipboard() {
+            const copyTextArea = document.getElementById('copyTextArea');
+            copyTextArea.select();
+            document.execCommand('copy');
+        }
+    </script>
+</body>
+
+</html>
