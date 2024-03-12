@@ -163,17 +163,7 @@
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const textarea = document.getElementById('chat');
-            const charCount = document.getElementById('charCount');
-
-            textarea.addEventListener('input', function () {
-                const currentLength = textarea.value.length;
-                charCount.textContent = `${currentLength}/160`;
-            });
-        });
-
-        function copyToClipboard() {
+            function copyToClipboard() {
             const copyTextArea = document.getElementById('copyTextArea');
             copyTextArea.select();
             document.execCommand('copy');
