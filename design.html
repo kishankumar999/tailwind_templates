@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<div class="">
+    <!-- ========== Skicky Search Header ============= -->
+    <div class="sticky top-0 z-10 flex flex-col bg-teal-200 px-3 py-3">
+      <form class="flex items-center gap-3">
+        <label for="voice-search" class="sr-only">Search</label>
+        <div class="relative w-full">
+          <div class="pointer-events-none absolute inset-y-0 start-0 flex items-center ps-3">
+            <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+            </svg>
+          </div>
+          <input type="text" id="voice-search" class="block w-full rounded-lg border border-gray-300 bg-white p-2.5 ps-10 text-sm text-black focus:border-blue-500 focus:ring-blue-500 dark:text-black dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500" placeholder="Search Products..." required />
+          <div class="absolute inset-y-0 end-0 flex items-center gap-4 pe-3">
+            <button type="button" class="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-upc-scan" viewBox="0 0 16 16">
+                <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5M.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5M3 4.5a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0zm2 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0z" />
+              </svg>
+            </button>
+            <button type="button" class="">
+              <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7v3a5.006 5.006 0 0 1-5 5H6a5.006 5.006 0 0 1-5-5V7m7 9v3m-3 0h6M7 1h2a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3Z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-qr-code-scan" viewBox="0 0 16 16">
+          <path d="M0 .5A.5.5 0 0 1 .5 0h3a.5.5 0 0 1 0 1H1v2.5a.5.5 0 0 1-1 0zm12 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V1h-2.5a.5.5 0 0 1-.5-.5M.5 12a.5.5 0 0 1 .5.5V15h2.5a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H15v-2.5a.5.5 0 0 1 .5-.5M4 4h1v1H4z" />
+          <path d="M7 2H2v5h5zM3 3h3v3H3zm2 8H4v1h1z" />
+          <path d="M7 9H2v5h5zm-4 1h3v3H3zm8-6h1v1h-1z" />
+          <path d="M9 2h5v5H9zm1 1v3h3V3zM8 8v2h1v1H8v1h2v-2h1v2h1v-1h2v-1h-3V8zm2 2H9V9h1zm4 2h-1v1h-2v1h3zm-4 2v-1H8v1z" />
+          <path d="M12 9h2V8h-2z" />
+        </svg>
+      </form>
+    </div>
+  
+    <!-- =============== Delivery Location ==============  -->
+    <div class="flex items-center gap-3 bg-teal-100 px-3 py-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+      </svg>
+      <p>Deliver to Neeraj - Kaimur Bhabua 821102</p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+      </svg>
+    </div>
+    <div class="flex items-center justify-start gap-4 overflow-x-auto p-3">
+      <div class="cursor-pointer gap-2" v-for="x in 10">
+        <img class="mx-w-full mx-auto h-auto w-12" src="https://png.pngtree.com/png-vector/20221012/ourmid/pngtree-best-deal-in-red-and-blue-banner-png-image_239546.png" alt="" />
+        <div class="text-center text-sm">Electronics</div>
+      </div>
+    </div>
+  
+    <!-- ================== Image Banner and Product Slider =============== -->
+    <div class="flex items-center justify-start gap-4 py-3">
+      <div class="relative w-full">
+        <img class="max-w-full bg-gray-900" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/OHL/GATEWAY/BOBS/Clearance/PC_hero_CS_1X._CB580114165_.jpg" alt="" />
+        <div class="absolute inset-x-0 top-20 flex items-center justify-center">
+          <div class="w-full max-w-xs cursor-pointer overflow-hidden border border-gray-300 bg-white p-2">
+            Buy Badminton at a reasonable price
+            <img class="mx-auto max-w-36" src="https://m.media-amazon.com/images/I/719I-gwMXQL._SX569_.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- ==================== Product grids ==================== -->
+  
+    <hr class="mt-32 h-1 border bg-gray-400" />
+    <div class="px-3 py-2">
+      <div>
+        <h2 class="font-bold">Up To 80% Off on Gaming Products</h2>
+        <div class="grid grid-flow-col grid-rows-2 gap-4 py-3">
+          <div class="cursor-pointer">
+            <img class="size-fit rounded-md bg-gray-300" src="https://www.pngall.com/wp-content/uploads/5/Sports-Ball-Transparent.png" alt="" />
+            <div class="flex items-center gap-1 pt-2">
+              <div class="rounded-sm bg-red-600 px-1 py-1 text-xs text-white">14% off</div>
+              <div class="text-xs font-bold text-red-600">Limited time deal</div>
+            </div>
+          </div>
+          <div class="cursor-pointer">
+            <img class="size-fit rounded-md bg-gray-300" src="https://www.pngall.com/wp-content/uploads/5/Sports-Ball-Transparent.png" alt="" />
+            <div class="flex items-center gap-1 pt-2">
+              <div class="rounded-sm bg-red-600 px-1 py-1 text-xs text-white">54% off</div>
+              <div class="text-xs font-bold text-red-600">Limited time deal</div>
+            </div>
+          </div>
+          <div class="cursor-pointer">
+            <img class="size-fit rounded-md bg-gray-300" src="https://www.pngall.com/wp-content/uploads/5/Sports-Ball-Transparent.png" alt="" />
+            <div class="flex items-center gap-1 pt-2">
+              <div class="rounded-sm bg-red-600 px-1 py-1 text-xs text-white">34% off</div>
+              <div class="text-xs font-bold text-red-600">Limited time deal</div>
+            </div>
+          </div>
+          <div class="cursor-pointer">
+            <img class="size-fit rounded-md bg-gray-300" src="https://www.pngall.com/wp-content/uploads/5/Sports-Ball-Transparent.png" alt="" />
+            <div class="flex items-center gap-1 pt-2">
+              <div class="rounded-sm bg-red-600 px-1 py-1 text-xs text-white">56% off</div>
+              <div class="text-xs font-bold text-red-600">Limited time deal</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="h-1 border bg-gray-400" />
+  
+    <div class="px-3 py-2">
+      <div>
+        <h2 class="font-bold">Deals for you</h2>
+        <div class="grid grid-flow-col grid-rows-2 gap-4 py-3">
+          <div class="cursor-pointer">
+            <img class="size-fit rounded-md bg-gray-300" src="https://www.pngall.com/wp-content/uploads/5/Sports-Ball-Transparent.png" alt="" />
+            <p>Foot Ball</p>
+          </div>
+          <div class="cursor-pointer">
+            <img class="size-fit rounded-md bg-gray-300" src="https://www.pngall.com/wp-content/uploads/5/Sports-Ball-Transparent.png" alt="" />
+            <p>Foot Ball</p>
+          </div>
+          <div class="cursor-pointer">
+            <img class="size-fit rounded-md bg-gray-300" src="https://www.pngall.com/wp-content/uploads/5/Sports-Ball-Transparent.png" alt="" />
+            <p>Foot Ball</p>
+          </div>
+          <div class="cursor-pointer">
+            <img class="size-fit rounded-md bg-gray-300" src="https://www.pngall.com/wp-content/uploads/5/Sports-Ball-Transparent.png" alt="" />
+            <p>Foot Ball</p>
+          </div>
+          <div class="cursor-pointer">
+            <img class="size-fit rounded-md bg-gray-300" src="https://www.pngall.com/wp-content/uploads/5/Sports-Ball-Transparent.png" alt="" />
+            <p>Foot Ball</p>
+          </div>
+          <div class="cursor-pointer">
+            <img class="size-fit rounded-md bg-gray-300" src="https://www.pngall.com/wp-content/uploads/5/Sports-Ball-Transparent.png" alt="" />
+            <p>Foot Ball</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="h-1 border bg-gray-400" />
+    <div class="px-3 py-2">
+      <div>
+        <h2 class="font-bold">Up to 70% of Football brands</h2>
+        <div class="grid grid-flow-col grid-rows-3 gap-4 py-3">
+          <div class="cursor-pointer">
+            <img class="size-fit rounded-md bg-gray-300" src="https://www.pngall.com/wp-content/uploads/5/Sports-Ball-Transparent.png" alt="" />
+            <p>Foot Ball</p>
+          </div>
+          <div class="cursor-pointer">
+            <img class="size-fit rounded-md bg-gray-300" src="https://www.pngall.com/wp-content/uploads/5/Sports-Ball-Transparent.png" alt="" />
+            <p>Foot Ball</p>
+          </div>
+          <div class="cursor-pointer">
+            <img class="size-fit rounded-md bg-gray-300" src="https://www.pngall.com/wp-content/uploads/5/Sports-Ball-Transparent.png" alt="" />
+            <p>Foot Ball</p>
+          </div>
+          <div class="cursor-pointer">
+            <img class="size-fit rounded-md bg-gray-300" src="https://www.pngall.com/wp-content/uploads/5/Sports-Ball-Transparent.png" alt="" />
+            <p>Foot Ball</p>
+          </div>
+          <div class="cursor-pointer">
+            <img class="size-fit rounded-md bg-gray-300" src="https://www.pngall.com/wp-content/uploads/5/Sports-Ball-Transparent.png" alt="" />
+            <p>Foot Ball</p>
+          </div>
+          <div class="cursor-pointer">
+            <img class="size-fit rounded-md bg-gray-300" src="https://www.pngall.com/wp-content/uploads/5/Sports-Ball-Transparent.png" alt="" />
+            <p>Foot Ball</p>
+          </div>
+          <div class="cursor-pointer">
+            <img class="size-fit rounded-md bg-gray-300" src="https://www.pngall.com/wp-content/uploads/5/Sports-Ball-Transparent.png" alt="" />
+            <p>Foot Ball</p>
+          </div>
+          <div class="cursor-pointer">
+            <img class="size-fit rounded-md bg-gray-300" src="https://www.pngall.com/wp-content/uploads/5/Sports-Ball-Transparent.png" alt="" />
+            <p>Foot Ball</p>
+          </div>
+          <div class="cursor-pointer">
+            <img class="size-fit rounded-md bg-gray-300" src="https://www.pngall.com/wp-content/uploads/5/Sports-Ball-Transparent.png" alt="" />
+            <p>Foot Ball</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="h-1 border bg-gray-400" />
+  </div>
+  
