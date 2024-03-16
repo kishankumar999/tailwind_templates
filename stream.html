@@ -104,6 +104,7 @@
             </li>
           </ol>
         </div>
+  
         <div class="h-full flex-1 overflow-y-auto overflow-x-hidden">
           <!-- chat box -->
           <div class="p-4">
@@ -609,6 +610,44 @@
                   <a href="#" class="block px-4 py-2 hover:bg-stone-100 dark:hover:bg-stone-600 dark:hover:text-white">Delete</a>
                 </li>
               </ul>
+            </div>
+          </div>
+  
+          <!-- ======footer======= -->
+          <div class="sticky bottom-0 w-full flex-1 bg-white dark:bg-stone-800">
+            <div class="p-2">
+              <div>
+                <label for="chat" class="sr-only">Your message</label>
+                <div class="flex items-end gap-2 rounded-lg">
+                  <div class="relative w-full rounded-lg">
+                    <textarea id="chat" rows="4" class="text-b block w-full snap-none rounded-lg border border-gray-300 bg-white px-8 py-2 text-sm text-gray-900 focus:border-gray-500 dark:border-gray-600 dark:bg-stone-800 dark:text-white dark:placeholder-gray-400 dark:focus:ring-cyan-500" placeholder="Your message..."></textarea>
+                    <div class="absolute bottom-1 flex">
+                      <button type="button" class="cursor-pointer rounded-lg p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                          <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5m4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5" />
+                        </svg>
+                        <span class="sr-only">Add emoji</span>
+                      </button>
+                    </div>
+                    <div class="right absolute bottom-1 right-0 flex">
+                      <button type="button" class="inline-flex cursor-pointer justify-center rounded-lg p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-paperclip" viewBox="0 0 16 16">
+                          <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0z" />
+                        </svg>
+                        <span class="sr-only">Upload image</span>
+                      </button>
+                    </div>
+                    <div id="charCount" class="absolute right-1 top-1 text-[10px] text-cyan-500">0/160</div>
+                  </div>
+                  <button type="submit" class="dark:bg-text-red- cursor-pointer rounded-lg bg-cyan-600 p-2 text-white hover:bg-cyan-800 hover:text-white dark:hover:bg-cyan-600 dark:hover:text-white">
+                    <svg class="h-5 w-5 rotate-90 rtl:-rotate-90" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+                      <path d="m17.914 18.594-8-18a1 1 0 0 0-1.828 0l-8 18a1 1 0 0 0 1.157 1.376L8 18.281V9a1 1 0 0 1 2 0v9.281l6.758 1.689a1 1 0 0 0 1.156-1.376Z" />
+                    </svg>
+                    <span class="sr-only">Send message</span>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
