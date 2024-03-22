@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+<section class="h-screen w-full">
+    <!-- header -->
+    <div class="border-b-2 p-4">
+      <div class="flex w-full items-center justify-between gap-2">
+        <div class="font-bold">Back</div>
+        <div><button type="button" class="mb-2 me-2 rounded-lg bg-yellow-400 px-10 py-2 text-sm font-medium text-black hover:bg-yellow-500">Apply</button></div>
+      </div>
+    </div>
+  
+    <!-- main -->
+    <div class="p-4 text-lg font-bold">Order type</div>
+    <div class="mx-4 rounded-lg border">
+      <div class="flex items-center ps-3">
+        <input id="default-radio-1" type="radio" value="" name="orderType" class="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 dark:border-gray-600 dark:bg-gray-700" />
+        <label for="default-radio-1" class="text-black-900 dark:text-black-300 ms-4 w-full py-3 text-sm font-medium"> Orders</label>
+      </div>
+      <div class="flex items-center border-t ps-3">
+        <input id="default-radio-2" type="radio" value="" name="orderType" class="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 dark:border-gray-600 dark:bg-gray-700" />
+        <label for="default-radio-2" class="text-black-900 dark:text-black-300 ms-4 w-full py-3 text-sm font-medium">Not Yet Shipped</label>
+      </div>
+      <div class="flex items-center border-t ps-3">
+        <input id="default-radio-3" type="radio" value="" name="orderType" class="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 dark:border-gray-600 dark:bg-gray-700" />
+        <label for="default-radio-3" class="text-black-900 dark:text-black-300 ms-4 w-full py-3 text-sm font-medium">Cancelled orders</label>
+      </div>
+    </div>
+  
+    <!-- Second Main -->
+    <div class="p-4 text-lg font-bold">Time filter</div>
+    <div class="mx-4 rounded-lg border">
+      <div class="flex items-center py-3 ps-3">
+        <input id="default-radio-4" type="radio" value="" name="timeFilter" class="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 dark:border-gray-600 dark:bg-gray-700" />
+        <label for="default-radio-4" class="text-black-900 dark:text-black-300 ms-4 w-full text-sm font-medium">Last 30 Days</label>
+      </div>
+      <div class="flex items-center py-3 border-t ps-3">
+        <input id="default-radio-5" type="radio" value="" name="timeFilter" class="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 dark:border-gray-600 dark:bg-gray-700" />
+        <label for="default-radio-5" class="text-black-900 dark:text-black-300 ms-4 w-full text-sm font-medium">Last 6 months</label>
+      </div>
+      <div class="flex items-center py-3 border-t ps-3">
+        <input id="default-radio-6" type="radio" value="" name="timeFilter" class="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 dark:border-gray-600 dark:bg-gray-700" />
+        <label for="default-radio-6" class="text-black-900 dark:text-black-300 ms-4 w-full text-sm font-medium">2024</label>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
+  
